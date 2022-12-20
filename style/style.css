@@ -254,6 +254,8 @@ body{
 .info-communicate__link {
    color: #3040C4;
    font-weight: 700;
+   font-size: 18px;
+   line-height: 26px;
 }
 
 /* ============================= section audience ========================================= */
