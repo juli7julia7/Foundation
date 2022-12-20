@@ -63,7 +63,6 @@ body{
 
 /* ============================== INFO ================================================= */
 
-.info {}
 
 .info__pretitle {
    font-weight: 700;
@@ -264,8 +263,6 @@ body{
    background: #EDF8FB;
 }
 
-.container {}
-
 .audience__pretitle {
       font-size: 22px;
       line-height: 34px;
@@ -274,24 +271,17 @@ body{
       font-weight: 700;
 }
 
-.audience__title {
- 
-}
-
-.title {}
 
 .audience__text {
    max-width: 555px;
    margin: 0 auto 34px;
 }
 
-.text {}
 
 .audience__button {
    margin-bottom: 111px;
 }
 
-.flex {}
 
 .audience__list {
    display: grid;
@@ -308,8 +298,6 @@ body{
 }
 
 
-
-.list-audience {}
 
 .list-audience__item{
    height: 300px;
@@ -339,9 +327,7 @@ body{
    
 }
 
-.cover-list__title {
-  
-}
+
 
 .title {
    font-weight: 700;
