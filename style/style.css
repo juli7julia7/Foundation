@@ -1,0 +1,389 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Work Sans', sans-serif;
+   color: #2B292D;
+}
+
+.container{
+   max-width: 1140px;
+   margin: 0 auto;
+}
+
+.flex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.flex__start {
+   justify-content: flex-start;
+   gap: 11px;
+}
+
+
+.button-blue {
+      height: 48px;
+      width: 160px;
+      border: none;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+      border-radius: 2px;
+      font-size: 18px;
+      line-height: 13px;
+      color: #FFFFFF;
+      font-weight: 700;
+      
+}
+
+.button-blue:hover{
+   background: linear-gradient(180deg, rgba(21, 35, 233, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #6170f5;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.button-white {
+   height: 48px;
+   width: 158px;
+   border: none;
+   font-size: 18px;
+   line-height: 13px;
+   color: #000000;
+   background: #fff;
+   font-weight: 700;
+}
+
+.button-white:hover{
+   background: rgb(238, 235, 235);
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+
+/* ============================== INFO ================================================= */
+
+.info {}
+
+.info__pretitle {
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 34px;
+   margin-bottom: 26px;
+}
+
+.info__pretitle-orange {
+   color: #F1592B;
+}
+
+.info__pretitle-blue{
+   color: #0189D1;
+}
+
+.info__title {
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 56px;
+   letter-spacing: -0.5px;
+   margin-bottom: 26px;
+   max-width: 462px;
+   width: 100%;
+
+}
+
+.info__text {
+   font-size: 24px;
+   line-height: 34px;
+   color: #2B292D;
+   margin-bottom: 44px;
+   max-width: 461px;
+   width: 100%;
+}
+
+/* ==================================== HEADER ======================================================= */
+.header{
+   background: #F3C6BD;
+   padding: 50px 0 76px;
+}
+
+.logo img{
+   margin-right: 15px;
+}
+
+.logo__title{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      color: #2B292D;
+}
+
+.logo__text{
+   font-size: 18px;
+      line-height: 25px;
+      color: #2B292D;
+}
+
+.header__link{
+      font-size: 18px;
+      line-height: 25px;
+      color: #2B292D;
+      text-decoration: none;
+      position: relative;
+}
+
+.header__link:hover{
+   font-weight: 700;
+
+}
+
+.header__link:hover::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background-color: #3d4588;
+   bottom: -3px;
+   
+}
+
+.header__ul{
+   margin-right: 77px;
+}
+
+.header__li:not(:first-of-type){
+   margin-left: 30px;
+}
+
+
+
+
+/* ================================= description  ========================================== */
+
+.description {
+   background: #F4F5F7;
+   padding: 77px 0 76px;
+}
+
+
+
+
+.description__title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 32px;
+   color: #2B292D;
+}
+
+.description__text {
+      font-size: 22px;
+      line-height: 32px;
+      color: #2B292D;
+      max-width: 555px;
+}
+
+/* ================= lable-list ================================== */
+
+.lable-list{
+   margin: 33px auto;
+}
+
+
+/* ======================== INBOX ========================================== */
+
+.inbox {
+   background: rgba(252, 240, 227, 0.4);
+   padding: 142px 0 138px;
+}
+
+.inbox__response {
+   background: #fff;
+   max-width: 519px;
+   width: 100%;
+   padding: 30px 30px 24px;
+   border-bottom: 4px solid #0186D1;
+}
+
+.inbox__text {
+   font-size: 20px;
+   line-height: 28px;
+   margin-bottom: 26px;
+}
+
+.inbox__text-bold {
+   font-weight: 700;
+}
+
+.inbox__name {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 22px;
+   margin-bottom: 5px;
+}
+
+.inbox__position {
+   line-height: 22px;
+   color: rgba(43, 41, 45, 0.6);
+}
+
+/* ============================= COMMUNICATE ========================================= */
+
+.communicate{
+   margin: 110px auto 105px;
+}
+
+.communicate__block{
+   margin-bottom: 105px;
+}
+
+.info-communicate__block{
+   max-width: 360px;
+   width: 100%;
+}
+
+.communicate__info {}
+
+.info-communicate {}
+
+.info-communicate__text{
+   font-size: 18px;
+   line-height: 26px;
+   margin-bottom: 10px;
+}
+
+.info-communicate-span {
+   font-weight: 700;
+}
+
+.info-communicate__link {
+   color: #3040C4;
+   font-weight: 700;
+}
+
+/* ============================= section audience ========================================= */
+.audience {
+   padding: 108px 0 110px;
+   text-align: center;
+   background: #EDF8FB;
+}
+
+.container {}
+
+.audience__pretitle {
+      font-size: 22px;
+      line-height: 34px;
+      color: #2B292D;
+      margin-bottom: 24px;
+      font-weight: 700;
+}
+
+.audience__title {
+ 
+}
+
+.title {}
+
+.audience__text {
+   max-width: 555px;
+   margin: 0 auto 34px;
+}
+
+.text {}
+
+.audience__button {
+   margin-bottom: 111px;
+}
+
+.flex {}
+
+.audience__list {
+   display: grid;
+   gap: 30;
+   grid-template-columns: repeat(4, 1fr);
+
+}
+
+.list-audience__text{
+      font-size: 22px;
+      line-height: 28px;
+      color: #2B292D;
+      font-weight: 700;
+}
+
+
+
+.list-audience {}
+
+.list-audience__item{
+   height: 300px;
+      width: 262px;
+      background: #fff;
+      padding-top: 22px;
+}
+
+.list-audience__item:hover{
+   background: #3141C5;
+   cursor: pointer;
+}
+
+.list-audience__item:hover .list-audience__text{
+   color: #fff;
+}
+
+.list-audience__item img {
+   margin-bottom: 32px;
+}
+
+/* =========================== SECTION COVER ==================================== */
+.cover-list {
+   margin-bottom: 91px;
+   text-align: center;
+   margin-top: 90px;
+   
+}
+
+.cover-list__title {
+  
+}
+
+.title {
+   font-weight: 700;
+      font-size: 56px;
+      line-height: 66px;
+      color: #000000;
+      margin-bottom: 26px;
+}
+
+.cover-list__text {
+   max-width: 554px;
+   margin: 0 auto 97px;
+}
+
+.text {
+   font-size: 24px;
+      line-height: 34px;
+      color: #172342;
+}
+
+
+
+.cover-list__grid{
+   display: grid;
+   gap: 50px;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr); 
+}
+
+
+
+.covered__item:nth-child(3), .covered__item:nth-child(4) {
+   grid-row: span 2;
+}
+
+.covered__item img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
