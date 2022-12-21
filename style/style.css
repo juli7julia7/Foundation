@@ -372,3 +372,33 @@ body{
    border-radius: 10px;
 }
 
+/* ======================================================================================= */
+
+@media screen and (max-width:1090px){
+   .container{
+      max-width: 750px;
+   }
+   
+   .logo__text{
+      display: none;
+   }
+
+   .header__nav{
+      display: none;
+   }
+}
+
+@media screen and (max-width:320px) {
+   .container{
+      max-width: 290px;
+   }
+
+   .header{
+      background: #fff;
+      padding: 8px 0;
+   }
+
+   .logo img{
+      margin-right: 13px;
+   }
+}
