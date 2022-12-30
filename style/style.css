@@ -400,6 +400,7 @@ body {
    .description__text {
       max-width: 455px;
    }
+
 }
 
 @media screen and (max-width: 1090px) {
@@ -540,22 +541,41 @@ body {
       width: 100%;
    }
 
-   .lable-list{
+   .lable-list {
       margin: 25px auto 41px;
    }
 
-   .lable-list__items{
+   .lable-list__items {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
       gap: 21px 110px;
       margin: 0 auto;
    }
 
-   .lable-list__img{
+   .lable-list__img {
       max-width: 85px;
       width: 100%;
    }
 
+   .audience {
+      padding: 50px 0 79px;
+   }
+
+   .audience__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 38px 64px;
+   }
+
+   .list-audience__item {
+      max-width: 262px;
+      width: 100%;
+      align-content: center;
+   }
+
+   .audience__button{
+      margin-bottom: 52px;
+   }
 }
 
 
@@ -600,7 +620,7 @@ body {
       font-size: 20px;
    }
 
-   .lable-list{
+   .lable-list {
       margin: 20px auto 31px;
    }
 
@@ -670,12 +690,12 @@ body {
 
    }
 
-   .lable-list{
+   .lable-list {
       margin: 20px auto 45px;
    }
 
-   .lable-list__items{
-      gap: 15px 80px; 
+   .lable-list__items {
+      gap: 15px 80px;
    }
 
 
@@ -699,11 +719,11 @@ body {
       width: 100%;
    }
 
-      .lable-list__items {
-         gap: 20px 50px;
-      }
+   .lable-list__items {
+      gap: 20px 50px;
+   }
 
-       
+
 }
 
 @media screen and (max-width: 360px) {
@@ -711,9 +731,9 @@ body {
       max-width: 300px;
    }
 
-       .lable-list__items {
-          gap: 20px 50px;
-       }
+   .lable-list__items {
+      gap: 20px 50px;
+   }
 }
 
 @media screen and (max-width: 320px) {
@@ -834,8 +854,7 @@ body {
       margin-bottom: 40px;
    }
 
-   .lable-list__items{
+   .lable-list__items {
       gap: 10px 30px;
    }
 }
-
