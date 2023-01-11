@@ -41,6 +41,7 @@ body {
    background: linear-gradient(180deg, rgba(21, 35, 233, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #6170f5;
    cursor: pointer;
    transition: 0.5s;
+   transform: translateY(-10px);
 }
 
 .button-white {
@@ -59,6 +60,7 @@ body {
    background: rgb(238, 235, 235);
    cursor: pointer;
    transition: 0.5s;
+   transform: translateY(-10px);
 }
 
 
@@ -201,6 +203,11 @@ body {
    object-fit: scale-down;
 }
 
+.lable-list__img:hover{
+   transform: scale(1.5);
+   transition: 3s;
+}
+
 
 /* ======================== INBOX ========================================== */
 
@@ -272,6 +279,8 @@ body {
    line-height: 26px;
 }
 
+
+ 
 /* ============================= section audience ========================================= */
 .audience {
    padding: 108px 0 110px;
@@ -325,10 +334,14 @@ body {
 .list-audience__item:hover {
    background: #3141C5;
    cursor: pointer;
+   transition: 1s;
+   transform: rotate(360deg);
 }
 
 .list-audience__item:hover .list-audience__text {
    color: #fff;
+   transition: 500ms;
+   
 }
 
 .list-audience__item img {
@@ -342,7 +355,6 @@ body {
    margin-top: 90px;
 
 }
-
 
 
 .title {
@@ -387,7 +399,12 @@ body {
    border-radius: 10px;
 }
 
-/* ======================================================================================= */
+.covered__item img:hover{
+transition: 400ms;
+transform: scale(1.1);
+}
+
+/* ==================================== MEDIA  =================================================== */
 
 @media screen and (max-width: 1200px) {
    .container {
@@ -585,9 +602,10 @@ body {
    .audience {
       padding: 50px 0 79px;
    }
-.button-white {
-  margin-left: 10px;
-}
+
+   .button-white {
+      margin-left: 10px;
+   }
 
 }
 
@@ -643,6 +661,7 @@ body {
       margin: 0 auto;
    }
 }
+
 
 @media screen and (max-width: 550px) {
    .container {
@@ -722,9 +741,10 @@ body {
       max-width: 588px;
       margin: 0 auto;
    }
-.audience__text{
-max-width: 350px;
-}
+
+   .audience__text {
+      max-width: 350px;
+   }
 }
 
 
@@ -750,65 +770,71 @@ max-width: 350px;
       gap: 20px 50px;
    }
 
-.audience {
-   padding: 50px 0;
+   .audience {
+      padding: 50px 0;
+   }
+
+   .audience__text {
+      width: 290px;
+   }
+
+   .audience__pretitle {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 18px;
+      font-weight: 700;
+   }
+
+   .audience__pretitle {
+      font-size: 20px;
+   }
+
+   .audience__list {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      max-width: 262px;
+      margin: 0 auto;
+   }
+
+   .audience__button .button-blue {
+      margin-bottom: 10px;
+      width: 290px;
+   }
+
+   .audience__button .button-white {
+      width: 290px;
+      margin: 0 auto
+   }
+
+   .audience__button {
+      margin-bottom: 40px;
+   }
+
+   .cover-list__grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, 1fr);
+      gap: 17px;
+   }
+
+   .covered__item:nth-child(2) {
+      display: none;
+   }
+
+   .covered__item:nth-child(3) {
+      grid-column: 1/2;
+      grid-row: 4/6;
+   }
+
+   .covered__item:nth-child(4) {
+      grid-row: 4/2;
+   }
+
+   .cover-list {
+      margin: 78px auto 55px;
+   }
+
 }
 
-.audience__text{
-   width: 290px;
-}
-.audience__pretitle {
-   font-size: 20px;
-   line-height: 24px;
-   margin-bottom: 18px;
-   font-weight: 700;
-}
-.audience__pretitle{
-   font-size: 20px;
-}
-
-.audience__list {
-grid-template-columns: repeat(1, 1fr);
-grid-template-rows: repeat(4, 1fr);
-max-width: 262px;
-margin: 0 auto;
-}
-.audience__button .button-blue{
-   margin-bottom: 10px;
-   width: 290px;
-}
-.audience__button .button-white{
-   width: 290px;
-   margin: 0 auto
-}
-
-.audience__button{
-   margin-bottom: 40px;
-}
-.cover-list__grid {
-   grid-template-columns: 1fr;
-   grid-template-rows: repeat(7, 1fr);
-   gap: 17px;
-}
-
-.covered__item:nth-child(2) {
-   display: none;
-}
-
-.covered__item:nth-child(3) {
-   grid-column: 1/2;
-   grid-row: 4/6;
-}
-
-.covered__item:nth-child(4) {
-   grid-row: 4/2;
-}
-
-.cover-list {
-   margin: 78px auto 55px;
-}
-
-}
 
 @media screen and (max-width: 360px) {
    .container {
@@ -819,6 +845,7 @@ margin: 0 auto;
       gap: 20px 50px;
    }
 }
+
 
 @media screen and (max-width: 320px) {
    .container {
@@ -920,9 +947,9 @@ margin: 0 auto;
       gap: 10px 30px;
    }
 
-   .audience__text{
+   .audience__text {
       font-size: 24px;
-         line-height: 34px;
+      line-height: 34px;
    }
 
 }
