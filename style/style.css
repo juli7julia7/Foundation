@@ -203,7 +203,7 @@ body {
    object-fit: scale-down;
 }
 
-.lable-list__img:hover{
+.lable-list__img:hover {
    transform: scale(1.5);
    transition: 3s;
 }
@@ -280,7 +280,7 @@ body {
 }
 
 
- 
+
 /* ============================= section audience ========================================= */
 .audience {
    padding: 108px 0 110px;
@@ -341,7 +341,7 @@ body {
 .list-audience__item:hover .list-audience__text {
    color: #fff;
    transition: 500ms;
-   
+
 }
 
 .list-audience__item img {
@@ -399,10 +399,103 @@ body {
    border-radius: 10px;
 }
 
-.covered__item img:hover{
-transition: 400ms;
-transform: scale(1.1);
+.covered__item img:hover {
+   transition: 400ms;
+   transform: scale(1.1);
 }
+
+/* ========================================== TRIAL  ==================================================== */
+
+.trial {
+   background: #F4F5F7;
+   padding: 73px 0 72px;
+}
+
+.trial .container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 122px;
+}
+
+.container {}
+
+.trial__left {}
+
+.trial__img {}
+
+.trial__right {
+   display: flex;
+   flex-direction: column;
+}
+
+.trial__content {
+   margin-bottom: 26px;
+}
+
+.title__trial {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 40px;
+   letter-spacing: -0.25px;
+   color: #2B292D;
+   margin-bottom: 12px;
+}
+
+.trial__text {
+   font-size: 22px;
+   line-height: 32px;
+   color: #2B292D;
+   max-width: 555px;
+   margin: 0 auto;
+}
+
+.trial__form-block {}
+
+.trial__form {}
+
+.trial__email {
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.trial__input {
+   width: 385px;
+   max-width: 100%;
+   height: 48px;
+   background: #FFFFFF;
+   border: 1px solid rgba(43, 41, 45, 0.2);
+   border-radius: 2px;
+   outline: none;
+   padding: 17px 0 18px 15px;
+   font-size: 18px;
+   line-height: 13px;
+}
+
+.trial__input::placeholder {
+   color: #2B292D;
+}
+
+.trial__checkbox {
+  
+}
+
+.trial__input-checkbox{
+   opacity: 0;
+}
+
+.trial__span {
+   display: inline-block;
+}
+
+.trial__span::before{
+   content: '';
+}
+
+
+
 
 /* ==================================== MEDIA  =================================================== */
 
