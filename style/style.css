@@ -768,7 +768,13 @@ animation: 1s linear 1s infinite alternate inbox-image;
    .trial__email{
       margin-bottom: 20px;
    }
-
+   
+   
+      @keyframes inbox-image {
+         0% {
+            transform: translateX(0);
+         }
+   
 }
 
 
