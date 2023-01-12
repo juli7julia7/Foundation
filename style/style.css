@@ -166,9 +166,6 @@ body {
    padding: 77px 0 76px;
 }
 
-
-
-
 .description__title {
    font-style: normal;
    font-weight: 700;
@@ -208,7 +205,6 @@ body {
    transition: 3s;
 }
 
-
 /* ======================== INBOX ========================================== */
 
 .inbox {
@@ -246,6 +242,24 @@ body {
    color: rgba(43, 41, 45, 0.6);
 }
 
+.container-image{
+animation: 1s linear 1s infinite alternate inbox-image;
+
+
+}
+
+
+@keyframes inbox-image {
+   0% {
+      transform: translateX(0);
+   }
+
+   100% {
+      transform: translateX(45px);
+   }
+}
+
+
 /* ============================= COMMUNICATE ========================================= */
 
 .communicate {
@@ -260,7 +274,6 @@ body {
    max-width: 360px;
    width: 100%;
 }
-
 
 .info-communicate__text {
    font-size: 18px;
@@ -484,17 +497,51 @@ body {
 
 .trial__input-checkbox{
    opacity: 0;
+  
 }
 
-.trial__span {
+.trial__span-text{
+  
+}
+
+.trial__fake-checkbox{
    display: inline-block;
+   position: relative;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #0186D1;
+   border-radius: 2px;
+   bottom: -4px;
 }
 
-.trial__span::before{
+.trial__fake-checkbox::before{
    content: '';
+   position: absolute;
+   width: 10px;
+   height: 2px;
+   background: #3040C4;
+   top: 50%;
+   left: 10%;
+   transform: rotate(45deg);
+   opacity: 0;
 }
 
+.trial__fake-checkbox::after {
+   content: '';
+   position: absolute;
+   width: 10px;
+   height: 2px;
+   background: #3040C4;
+   top: 50%;
+   left: 37%;
+   transform: rotate(-45deg);
+   opacity: 0;
+}
 
+.trial__input-checkbox:checked ~ .trial__fake-checkbox::before, 
+.trial__input-checkbox:checked~ .trial__fake-checkbox::after{
+   opacity: 1;
+}
 
 
 /* ==================================== MEDIA  =================================================== */
