@@ -446,7 +446,7 @@ animation: 1s linear 1s infinite alternate inbox-image;
    margin-bottom: 26px;
 }
 
-.title__trial {
+.trial__title {
    font-weight: 700;
    font-size: 40px;
    line-height: 40px;
@@ -747,7 +747,30 @@ animation: 1s linear 1s infinite alternate inbox-image;
       margin-left: 10px;
    }
 
+   .trial .container{
+      flex-direction: column-reverse;
+     text-align: center;
+      gap: 20px;
+   }
+   .trial__title{
+      font-size: 48px;
+      line-height: 50px;
+      letter-spacing: -0.357143px;
+      width: 325px;
+      margin: 0 auto 35px; 
+   }
+
+   .trial__input, .button-blue--trial{
+      width: 290px;
+      max-width: 100%;
+   }
+
+   .trial__email{
+      margin-bottom: 20px;
+   }
+
 }
+
 
 
 @media screen and (max-width: 800px) {
@@ -799,6 +822,25 @@ animation: 1s linear 1s infinite alternate inbox-image;
       gap: 28px 44px;
       max-width: 588px;
       margin: 0 auto;
+   }
+
+   .trial__text{
+      width: 400px;
+      max-width: 100%;
+   }
+
+   .trial__email{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .trial__checkbox{
+      width: 350px;
+   }
+
+   .trial__span-text{
+      font-size: 14px;
+         line-height: 22px;
    }
 }
 
@@ -885,7 +927,33 @@ animation: 1s linear 1s infinite alternate inbox-image;
    .audience__text {
       max-width: 350px;
    }
+
+   .trial .container{
+      flex-direction: column;
+   }
+
+   .trial__left img{
+      width: 200px;
+   }
+   .trial__content{
+      text-align: left;
+   }
+
+   .trial__span-text{
+   
+   }
+
+   .trial__text{
+      width: 320px;
+   }
+   .trial__email{
+      width: 320px;
+   }
+
+
 }
+
+
 
 
 @media screen and (max-width: 480px) {
@@ -1092,4 +1160,21 @@ animation: 1s linear 1s infinite alternate inbox-image;
       line-height: 34px;
    }
 
+   .trial{
+      padding: 20px 20px 20px;
+   }
+
+   .trial__input, .button-blue--trial{
+      width: 290px;
+   }
+
+   .trial__title, .trial__text, .trial__input, .button-blue--trial{
+      width: 290px;
+   }
+
+   .trial__email{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
 }
