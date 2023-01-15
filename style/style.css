@@ -401,6 +401,7 @@ body {
    width: 262px;
    background: #fff;
    padding-top: 22px;
+   border-radius: 8px;
 }
 
 .list-audience__item:hover {
@@ -819,7 +820,7 @@ body {
       transform: rotate(-45deg) translate(2px, 3px);
    }
 
-   .checkbox:checked~.header__nav {
+   .checkbox:checked~ .header__nav {
       position: absolute;
       display: block;
       z-index: 2;
