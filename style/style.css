@@ -34,13 +34,14 @@ body {
    line-height: 13px;
    color: #FFFFFF;
    font-weight: 700;
+   transition: all 0.5s;
 
 }
 
 .button-blue:hover {
    background: linear-gradient(180deg, rgba(21, 35, 233, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #6170f5;
    cursor: pointer;
-   transition: 0.5s;
+  
    transform: translateY(-10px);
 }
 
@@ -54,6 +55,7 @@ body {
    background: #fff;
    font-weight: 700;
    margin-left: 10px;
+   transition: all 0.5s;
 }
 
 .button-white-blue {
@@ -64,7 +66,6 @@ body {
 .button-white:hover {
    background: rgb(238, 235, 235);
    cursor: pointer;
-   transition: 0.5s;
    transform: translateY(-10px);
 }
 
@@ -252,17 +253,20 @@ body {
    grid-template-columns: repeat(6, 1fr);
    grid-template-rows: 1 fr;
    gap: 105px;
+  
+   
 }
 
 .lable-list__img {
    width: 100%;
    height: 100%;
    object-fit: scale-down;
+   transition: all 500ms;
 }
 
 .lable-list__img:hover {
    transform: scale(1.5);
-   transition: 3s;
+   
 }
 
 /* ======================== INBOX ========================================== */
@@ -395,19 +399,18 @@ body {
 }
 
 
-
 .list-audience__item {
    height: 300px;
    width: 262px;
    background: #fff;
    padding-top: 22px;
+   transition: all 1s;
    border-radius: 8px;
 }
 
 .list-audience__item:hover {
    background: #3141C5;
    cursor: pointer;
-   transition: 1s;
    transform: rotate(360deg);
 }
 
@@ -466,10 +469,10 @@ body {
    height: 100%;
    object-fit: cover;
    border-radius: 10px;
+   transition: 500ms;
 }
 
 .covered__item img:hover {
-   transition: 400ms;
    transform: scale(1.1);
 }
 
@@ -514,9 +517,6 @@ body {
    margin: 0 auto;
 }
 
-.trial__form-block {}
-
-.trial__form {}
 
 .trial__email {
    margin-bottom: 10px;
@@ -857,7 +857,7 @@ body {
       flex-direction: column;
    }
 
-
+  
    .main__title {
       font-size: 60px;
       line-height: 72px;
