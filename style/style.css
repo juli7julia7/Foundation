@@ -263,6 +263,7 @@ body {
 
 .lable-list__img:hover {
   transform: scale(1.5);
+  cursor: pointer;
 }
 
 /* ======================== INBOX ========================================== */
@@ -324,13 +325,16 @@ body {
 
 .features__left {
   margin-right: 126px;
+  z-index: 5;
 }
 
 .features__left .info {
   margin-bottom: 42px;
 }
 
-.features__content {}
+.features__content {
+  max-width: 459px;
+}
 
 .features__title {
   font-size: 22px;
@@ -375,6 +379,43 @@ div:nth-child(3) > .features__title::before {
   width: 100%;
   background: #2B292D;
   opacity: 0.15;
+}
+
+.features__right{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.features__right-icon{
+  background: url('../img/features/features.jpg') 0 0 no-repeat;
+  width: 684px;
+  height: 591px;
+}
+
+.change-color-title{
+  color: #3142C6;
+  transition: 300ms
+}
+
+.change-features-line{
+  height: 2px;
+    width: 100%;
+    background: #3142C6;
+    opacity: 0.15;
+}
+
+.features__decor-block {
+  position: absolute;
+}
+
+.features__decor-item {
+  background: url('../img/features/decor.svg') 0 0 no-repeat;
+  width: 167px;
+  height: 168px;
+  bottom: 39%;
+  left: -5.6%;
+
 }
 
 /* ============================= COMMUNICATE ========================================= */
@@ -759,6 +800,11 @@ div:nth-child(3) > .features__title::before {
   line-height: 30px;
   color: rgba(43, 41, 45, 0.6);
   text-decoration: none;
+  transition: 1s;
+}
+
+.footer__link-item:hover{
+  color: #3142C6;
 }
 
 .footer__item:not(:last-of-type) {
@@ -800,6 +846,11 @@ div:nth-child(3) > .features__title::before {
 
 .privacy__link {
   text-decoration: none;
+  transition: 1s;
+}
+
+.privacy__link:hover{
+  color: #3142C6;
 }
 
 .privacy__link:not(:last-of-type) {
