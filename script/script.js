@@ -6,8 +6,8 @@ $('.hiring__items > div').on('click', function () {
 
 
 $('.features__block').on('click', function (){
-   $(this).children('features__title').toggleClass('.change-color-title');
-   $(this).children('.features__line').toggleClass('.change-features-line')
+   $(this).children('.features__title').toggleClass('change-color-title');
+   $(this).children('.features__line').toggleClass('change-features-line')
    $(this).children('.features__text').slideToggle(300)
 })
 
