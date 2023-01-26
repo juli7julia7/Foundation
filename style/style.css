@@ -9,6 +9,14 @@ body {
 
 .container {
   max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-big {
+  position: relative;
+  max-width: 1350px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -181,10 +189,10 @@ body {
 }
 
 /* ====================================== MAIN  ================================================== */
+
 .main {
   background: #f3c6bd;
   padding-bottom: 126px;
-  position: relative;
 }
 
 .main__container>div:first-of-type {
@@ -322,9 +330,12 @@ body {
   margin: 70px auto 103px;
 }
 
+.features .container-big {
+  max-width: 1440px;
+}
 
 .features__left {
-  
+  position: relative;
   z-index: 5;
 }
 
@@ -381,7 +392,7 @@ div:nth-child(3)>.features__title::before {
   opacity: 0.15;
 }
 
-.change-features-line {
+features__right .change-features-line {
   height: 3px;
   width: 100%;
   background: #3142C6;
@@ -393,6 +404,7 @@ div:nth-child(3)>.features__title::before {
 .features__right {
   position: absolute;
   right: 0;
+  top: 0;
   z-index: 1;
 }
 
@@ -513,6 +525,66 @@ div:nth-child(3)>.features__title::before {
 .list-audience__item img {
   margin-bottom: 32px;
 }
+
+
+/* ==================================== SECTION CARUSEL ++++++++++++++++++++==================================== */
+.carusel {
+  margin: 0 auto 66px;
+}
+
+.carusel__content {
+  text-align: center;
+
+}
+
+.carusel__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #3142C6;
+  max-width: 1140px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.carusel__text {
+  font-size: 24px;
+  line-height: 34px;
+  color: #2B292D;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+
+.carusel__info {
+  margin-bottom: 38px;
+}
+
+.carusel__info-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.carusel__info-position {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+.carusel__icon {
+  position: absolute;
+  right: 0;
+  margin-top: -170px;
+}
+
+.carusel__img {
+  background: url(../img/carusel/carusel.svg) 0 0 no-repeat;
+  width: 273px;
+  height: 243px;
+}
+
 
 /* ======================================== SECTION HIRING =================================================== */
 .hiring {
@@ -803,7 +875,7 @@ div:nth-child(3)>.features__title::before {
   line-height: 30px;
   color: rgba(43, 41, 45, 0.6);
   text-decoration: none;
-  transition: 1s;
+  transition: 500ms;
 }
 
 .footer__link-item:hover {
@@ -849,7 +921,7 @@ div:nth-child(3)>.features__title::before {
 
 .privacy__link {
   text-decoration: none;
-  transition: 1s;
+  transition: 500ms;
 }
 
 .privacy__link:hover {
@@ -891,6 +963,31 @@ div:nth-child(3)>.features__title::before {
   top: 20px;
   right: 40px;
   cursor: pointer;
+}
+
+/* ================================== UP ========================================================= */
+#up {
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 50px;
+  background-color: #0186d1;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#up span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  transform: rotate(-90deg) translate(90%, -20%);
 }
 
 /* ==================================== MEDIA  =================================================== */
@@ -950,6 +1047,8 @@ div:nth-child(3)>.features__title::before {
 }
 
 @media screen and (max-width: 1090px) {
+
+  .features .container-big,
   .container {
     max-width: 750px;
   }
@@ -1022,20 +1121,6 @@ div:nth-child(3)>.features__title::before {
     border-radius: 8px;
   }
 
-  /* .checkbox:checked~.header__nav{
-    display: block;
-      position: fixed;
-      background: rgb(232, 186, 114);
-      z-index: 2;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      text-align: center;
-      padding-top: 40px;
-} */
-
-
   .header__li {
     margin-right: 0;
     margin-bottom: 5px;
@@ -1086,11 +1171,11 @@ div:nth-child(3)>.features__title::before {
   }
 
   .features__decor-block {
-    margin-top: 200px;
+    margin-top: -590px;
   }
 
   .features__content {
-    margin-bottom: 65px;
+    margin: 0 auto 65px;
   }
 
   .features__right {
@@ -1229,6 +1314,32 @@ div:nth-child(3)>.features__title::before {
   .audience {
     padding: 50px 0 79px;
   }
+
+  .carusel__icon {
+    position: static;
+    margin-top: 170px;
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+  .carusel.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.carusel__img{
+  margin: 0 auto;
+}
+
+.carusel__info{
+  margin-top: 51px;
+}
+
+.carusel__text{
+  margin-bottom: 20px;
+}
 
   .hiring {
     margin: 87px auto 0;
@@ -1422,8 +1533,8 @@ div:nth-child(3)>.features__title::before {
     width: 538px;
     height: 446px;
   }
-   
-  .features__content{
+
+  .features__content {
     margin-bottom: 17px;
   }
 
@@ -1960,15 +2071,15 @@ div:nth-child(3)>.features__title::before {
     margin-bottom: 45px;
   }
 
-    .features__title{
-      font-size: 16px;
-        line-height: 26px;
-    }
+  .features__title {
+    font-size: 16px;
+    line-height: 26px;
+  }
 
-    .features__text{
-      font-size: 24px;
-      line-height: 34px;
-    }
+  .features__text {
+    font-size: 24px;
+    line-height: 34px;
+  }
 
   .cover-list__text {
     max-width: 303px;

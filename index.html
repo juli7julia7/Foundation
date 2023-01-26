@@ -9,7 +9,9 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Wo+Sans:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
    <link rel="stylesheet" href="./style/style.css">
+   <link rel="stylesheet" href="./style/carusel.css">
    <title>Document</title>
 </head>
 
@@ -26,7 +28,7 @@
             </div>
          </div>
          <div class="menu">
-            <input checked type="checkbox" class="checkbox">
+            <input type="checkbox" class="checkbox">
             <div class="check__wrapper">
                <div class="check"></div>
                <div class="check"></div>
@@ -35,7 +37,7 @@
             <nav class="header__nav flex">
                <ul class="header__ul flex flex__menu">
                   <li class="header__li">
-                     <a class="header__link" href="">Home</a>
+                     <a class="header__link" id="hiring-link" href="">Home</a>
                   </li>
                   <li class="header__li">
                      <a class="header__link" href="">Stories</a>
@@ -47,8 +49,8 @@
       </div>
    </header>
    <section class="main">
-      <div class="container flex main__container">
-         <div>
+      <div class="container-big flex main__container">
+         <div class="container">
             <h1 class="main__title">Build stunning websites & apps.</h1>
             <p class="main__text">Create live segments and target the right people for messages based on their
                behaviors.</p>
@@ -91,46 +93,51 @@
          <img class="lable-list__img" src="./img/label-list/Google.svg" alt="Google">
       </div>
    </section>
-   <section class="features container flex">
-      <div class="features__left">
-         <div class="info">
-            <p class="info__pretitle info__pretitle-green">Features</p>
-            <h2 class="info__title">
-               Easily find leads and customers
-            </h2>
-            <p class="info__text">
-              Send one-off and automated email, push, and in-app messages to people. Create better stories.
-            </p>
+   <section class="features flex">
+      <div class="container-big">
+         <div class="features__left container">
+            <div class="info">
+               <p class="info__pretitle info__pretitle-green">Features</p>
+               <h2 class="info__title">
+                  Easily find leads and customers
+               </h2>
+               <p class="info__text">
+                  Send one-off and automated email, push, and in-app messages to people. Create better stories.
+               </p>
+            </div>
+            <div class="features__content">
+               <div class="features__block">
+                  <h3 class="features__title">
+                     Acquire new customers
+                  </h3>
+                  <p class="features__text">Everything you need to start building – including open-source code,
+                     documentation.</p>
+                  <div class="features__line">
+                  </div>
+               </div>
+               <div class="features__block">
+                  <h3 class="features__title">
+                     Engage users
+                  </h3>
+                  <p class="features__text">Everything you need to start building – including open-source code,
+                     documentation.</p>
+                  <div class="features__line">
+                  </div>
+               </div>
+               <div class="features__block">
+                  <h3 class="features__title">
+                     Develop across platforms
+                  </h3>
+                  <p class="features__text">Everything you need to start building – including open-source code,
+                     documentation.</p>
+                  <div class="features__line">
+                  </div>
+               </div>
+            </div>
          </div>
-         <div class="features__content">
-            <div class="features__block">
-               <h3 class="features__title">
-                  Acquire new customers
-               </h3>
-               <p class="features__text">Everything you need to start building – including open-source code, documentation.</p>
-               <div class="features__line">
-               </div>
-            </div>
-             <div class="features__block">
-               <h3 class="features__title">
-                  Engage users
-               </h3>
-               <p class="features__text">Everything you need to start building – including open-source code, documentation.</p>
-               <div class="features__line">
-               </div>
-            </div>
-             <div class="features__block">
-               <h3 class="features__title">
-                 Develop across platforms
-               </h3>
-               <p class="features__text">Everything you need to start building – including open-source code, documentation.</p>
-               <div class="features__line">
-               </div>
-            </div>
+         <div class="features__right">
+            <div class="features__right-icon"></div>
          </div>
-      </div>
-      <div class="features__right">
-         <div class="features__right-icon"></div>
       </div>
       <div class="features__decor-block">
          <div class="features__decor-item"></div>
@@ -241,7 +248,73 @@
       </div>
       </div>
    </section>
-   <section class="hiring container">
+   <section class="lable-list container flex">
+      <div class="lable-list__items">
+         <img class="lable-list__img" src="./img/label-list/TheNT.svg" alt="The New York">
+         <img class="lable-list__img" src="./img//label-list/Forbes.svg" alt="Forbes">
+         <img class="lable-list__img" src="./img/label-list/Apple.svg" alt="Apple">
+         <img class="lable-list__img" src="./img/label-list//Mashable.svg" alt="Mashable">
+         <img class="lable-list__img" src="./img/label-list//WSJ.svg" alt="WSJ">
+         <img class="lable-list__img" src="./img/label-list/Google.svg" alt="Google">
+      </div>
+   </section>
+   <section class="carusel container">
+      <div class="carusel__wrapper">
+         <div class="carusel__content">
+            <h2 class="carusel__title">
+               Trusted by the world’s most innovative businesses – big and small
+            </h2>
+            <p class="carusel__text">
+               “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send
+               emails, find freelancers. Perfect for sales, marketing, and support”
+            </p>
+            <div class="carusel__info">
+               <h3 class="carusel__info-name">
+                  Viella Malkovich
+               </h3>
+               <p class="carusel__info-position">
+                  Creative Director at Johnson
+               </p>
+            </div>
+         </div>
+         <div class="carusel__content">
+            <h2 class="carusel__title">
+               Trusted by the world’s most innovative businesses – big and small
+            </h2>
+            <p class="carusel__text">
+               “Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque temporibus, vel aut inventore aliquam nisi consectetur officia blanditiis harum, eligendi, expedita et quam saepe praesentium?”
+            </p>
+            <div class="carusel__info">
+               <h3 class="carusel__info-name">
+                  Viella Malkovich
+               </h3>
+               <p class="carusel__info-position">
+                  Creative Director at Johnson
+               </p>
+            </div>
+         </div>
+         <div class="carusel__content">
+            <h2 class="carusel__title">
+               Trusted by the world’s most innovative businesses – big and small
+            </h2>
+            <p class="carusel__text">
+               “Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam fugiat adipisci labore eos. Labore adipisci itaque numquam culpa nesciunt aliquam perspiciatis. Veniam, error provident!”
+            </p>
+            <div class="carusel__info">
+               <h3 class="carusel__info-name">
+                  Viella Malkovich
+               </h3>
+               <p class="carusel__info-position">
+                  Creative Director at Johnson
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="carusel__icon">
+         <div class="carusel__img"></div>
+      </div>
+   </section>
+   <section id="hiring" class="hiring container">
       <div class="hiring__content">
          <h2 class="hiring__title">
             We’re hiring
@@ -438,11 +511,16 @@
          </p>
       </div>
    </div>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <div class="" id="up">
+      <span>></span>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+   <script src="./script/bxslider.js"></script>
    <script src="./script/script.js"></script>
    <script src="./script/modal.js"></script>
+   <script src="./script/upButton.js"></script>
 </body>
 
 </html>
+
